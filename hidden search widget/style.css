@@ -1,38 +1,45 @@
-body {
-    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
-  }
-  .search{
-    position: relative;
-    height: 50px;
-  }
-  .search .input{
-    background-color: white;
-    border: 0;
-    font-size: 18px;
-    padding: 15px;
-    width: 50px;
-    height:50px;
-    transition: width 0.3 ease;
-  }
-  .button{
-    background-color: white;
-    border: 0;
-    cursor: pointer;
-    font-size: 24px;
-    position: absolute;
-    height: 50px;
-    top: 0;
-    left: 0;
-    width: 50px;
-    transition: transform 0.3 ease;
-  }
-  .button:focus,input:focus{
-    outline: none;
-  }
+body{
+  background-color: rgb(104, 32, 190);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.search{
+  position: relative;
+  height: 50px;
+}
+
+
+.input{
+  background-color: white;
+  position: relative;
+  border: none;
+  height:50px;
+  width: 50px;
+  transition: width 0.3s ease;
+}
+.button{
+  position: absolute;
+  border: 0;
+  background-color: white;
+  font-size: 20px;
+  top: 0;
+  left: 0;
+  height: 52px;
+  width: 54px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.input:focus,.button:focus{
+  outline: none;
+}
+.search.active .input{
+  width: 200px;
+}
+
+.search.active .button{
+  transform: translateX(198px);
+}
