@@ -1,0 +1,51 @@
+
+
+body{
+    background-color: midnightblue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+.first{
+    position: absolute;
+    border: 50px solid  transparent;
+    border-top-color: white;
+    animation: second 2s linear 0.5s infinite ;
+}
+
+
+.second{
+    position: absolute;
+    border: 50px solid  transparent;
+    border-left-color: white;
+    animation: first 2s linear 0.5s infinite;
+}
+
+@keyframes first {
+    0%,25%{
+        transform: rotate(0);
+    }
+    50%,75%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes second {
+    25%,50%{
+        transform: rotate(180deg);
+    }
+    75%,100%{
+        transform: rotate(360deg);
+    }
+    0%{
+        transform: rotate(0deg);
+    }
+}
