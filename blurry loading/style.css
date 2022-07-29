@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.background{
+  background: url('https://wallpapercave.com/uwp/uwp2129466.jpeg') no-repeat center /cover;
+  position: absolute;
+  display: flex;
+  top: -2vh;
+  left:-2vw;
+  height: calc(100vh + 4vh);
+  width: calc(100vw + 4vw);
+  filter: blur(50px);
+  z-index: -1;
+}
+
+.loading{
+  position: absolute;
+  top: 50vh;
+  color: white;
+  font-size: 5vh;
+}
