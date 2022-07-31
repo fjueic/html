@@ -13,6 +13,7 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  perspective: 1000px;
 }
 
 .container{
@@ -30,8 +31,10 @@ body {
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 10px;
+  transform-style: preserve-3d;
   transition: all 0.3s ease;
-
+  transform:  rotateX(25deg) ;
+  /* transform: rotatey(-45deg); */
 }
 .image{
   position: relative;
@@ -91,6 +94,7 @@ h4{
   background-color: rgb(243, 103, 39);
   border: none;
   cursor: pointer;
+  position: relative;
 }
 
 .sizes{
@@ -104,6 +108,7 @@ h4{
 
 
 .size{
+  position: relative;
   height: 1.5rem;
   width: 2.5rem;
   border-radius: 10px;
