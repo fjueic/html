@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Oswald:wght@200&family=Poppins&family=Rubik:wght@500&family=Spline+Sans+Mono:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+} 
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+.board{
+  height: 80%;
+  width: 100%;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+}
+.line{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  width: 100%;
+  color: white;
+  font-size: calc((75vw - 4.5rem) / 7);
+}
+
+.box{
+  font-size: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dotted red;
+  height: 4vw;
+  width:  4vw;
+  color: red;
+}
+
+
