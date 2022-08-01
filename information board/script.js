@@ -62,7 +62,7 @@ function KeyPress(e) {
     };
 }
 createLines(2);
-print(`Ctrl+SpaceBar for input.`)
+print(`Ctrl+SpaceBar for   input.`)
 document.onkeydown = KeyPress;
 
 
