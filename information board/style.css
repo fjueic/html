@@ -44,10 +44,11 @@ body {
 }
 
 .box{
-  font-size: 0.5rem;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: 1px dotted red;
   height: 4vw;
   width:  4vw;

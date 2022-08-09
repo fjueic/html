@@ -29,7 +29,13 @@ function createLines(n){
     const b = document.querySelector('.board');
     b.innerHTML=board;
 }
-
+const removeExtraSpaces = (string) => {
+    const newText = string
+      .replace(/\s+/g, " ")
+      .replace(/^\s+|\s+$/g, "")
+      .replace(/ +(\W)/g, "$1");
+    return newText
+  };
 
 function print(s){
     const boxes = document.querySelectorAll('.box');
@@ -40,7 +46,8 @@ function print(s){
 function KeyPress(e) {
     var evtobj = window.event? event : e
     if (evtobj.keyCode == 32     && evtobj.ctrlKey) {
-        var input = window.prompt("Input:")
+        var input = window.prompt("Input:");
+        input=removeExtraSpaces(input);
         input = input.split(' ');
         let s = '';
         input.forEach(word => {
