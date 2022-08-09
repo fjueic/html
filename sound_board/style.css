@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Merriweather+Sans&family=Oswald:wght@200&family=Poppins&family=Rubik:wght@500&family=Spline+Sans+Mono:wght@700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(198, 43, 198);
+  color: white;
+}
+
+
+h1{
+  text-align: center;
+}
+#buttons{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+.btn{
+  background-color: rebeccapurple;
+  border: none;
+  min-height: 1.5rem;
+  min-width: 3rem;
+  height: auto;
+  width: auto;
+  margin: 1rem;
+  cursor: pointer;
+  color: white;
+  font-family: inherit;
+  border-radius: 2px;
+  padding: 0.5rem;
+}
+
+.btn:active{
+  border: none;
+  scale: 0.95;
+}
+
+.btn:hover{
+  opacity: 0.9;
+}
